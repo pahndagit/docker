@@ -1,10 +1,9 @@
 FROM node:latest
 
-RUN	npm install -g forever
-RUN npm install telegram-bot-api
-RUN npm install cheerio
-RUN npm install node-url-shortener
-RUN npm install random-useragent
-RUN npm install node-cache
+RUN \
+	npm install -g forever
+  npm install node-url-shortener
+
+ENTRYPOINT ["forever"]
 
 ENTRYPOINT ["forever"]
