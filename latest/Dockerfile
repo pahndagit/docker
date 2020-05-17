@@ -5,5 +5,3 @@ RUN \
   npm install node-url-shortener
 
 ENTRYPOINT ["forever"]
-
-ENTRYPOINT ["forever"]
